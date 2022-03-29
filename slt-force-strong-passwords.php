@@ -39,11 +39,9 @@ $plugin_data = get_file_data( FSP_PLUGIN_BASE, array( 'Version' => 'Version' ) )
 define( 'FSP_PLUGIN_VERSION', $plugin_data['Version'] );
 
 /**
- * Use zxcvbn for versions 3.7 and above
- *
- * @since       1.3
+ * This is a tweak to work strict (newer) versions of PHP.
  */
-define( 'SLT_FSP_USE_ZXCVBN', version_compare( round( $wp_version, 1 ), '3.7' ) >= 0 );
+define( 'SLT_FSP_USE_ZXCVBN', true );
 
 if ( ! defined( 'SLT_FSP_CAPS_CHECK' ) ) {
 	/**
