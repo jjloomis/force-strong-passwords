@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:  Force Strong Passwords
- * Plugin URI:   https://github.com/boogah/force-strong-passwords/
- * Description:  Forces privileged users to set a strong password.
- * Version:      1.8.0
+ * Plugin Name:  Force Strong Passwords (Custom)
+ * Plugin URI:   https://github.com/jjloomis/force-strong-passwords
+ * Description:  Forces privileged users to set a strong password (custom version)
+ * Version:      1.8.1
  * Author:       Jason Cosper
  * Author URI:   http://jasoncosper.com/
  * License:      GPLv3
@@ -14,7 +14,7 @@
  * @link         https://jasoncosper.com/
  * @package      WordPress
  * @author       Jason Cosper
- * @version      1.8.0
+ * @version      1.8.1
  */
 
 global $wp_version;
@@ -39,7 +39,7 @@ $plugin_data = get_file_data( FSP_PLUGIN_BASE, array( 'Version' => 'Version' ) )
 define( 'FSP_PLUGIN_VERSION', $plugin_data['Version'] );
 
 /**
- * This is a tweak to work strict (newer) versions of PHP.
+ * Custom tweak so plugin works with newer versions of PHP.
  */
 define( 'SLT_FSP_USE_ZXCVBN', true );
 
